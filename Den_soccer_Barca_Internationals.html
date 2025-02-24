@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bf91efbd72548edf2517afa62137ae64 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bf91efbd72548edf2517afa62137ae64" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bf91efbd72548edf2517afa62137ae64 = L.map(
+                "map_bf91efbd72548edf2517afa62137ae64",
+                {
+                    center: [50.508, 20.505],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4.5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9ec67e039be114ba8792e6efa312f6be = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9ec67e039be114ba8792e6efa312f6be.addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var marker_b43d0c9b05158096829305b606804022 = L.marker(
+                [53.9, 27.5667],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_f924e329030b7bf8ccc3ab2fc88ca31b = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: blue;\n                border: 1px solid blue;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_b43d0c9b05158096829305b606804022.setIcon(div_icon_f924e329030b7bf8ccc3ab2fc88ca31b);
+        
+    
+        var popup_93f79c967eb74a3b187eaa7c7cc08c42 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_30a2e8a3c10a30fb06d12d8885e5ab7d = $(`<div id="html_30a2e8a3c10a30fb06d12d8885e5ab7d" style="width: 100.0%; height: 100.0%;"><b>Minsk, Belarus</b><br>BATE Borisov - FC Barcelona 0:5 (2011/2012)</div>`)[0];
+                popup_93f79c967eb74a3b187eaa7c7cc08c42.setContent(html_30a2e8a3c10a30fb06d12d8885e5ab7d);
+            
+        
+
+        marker_b43d0c9b05158096829305b606804022.bindPopup(popup_93f79c967eb74a3b187eaa7c7cc08c42)
+        ;
+
+        
+    
+    
+            var marker_f0e9da313f9d622d60c1643e265af45d = L.marker(
+                [50.0875, 14.4214],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_4758a88aba3de9fd5c9580296bdb6178 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: blue;\n                border: 1px solid blue;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_f0e9da313f9d622d60c1643e265af45d.setIcon(div_icon_4758a88aba3de9fd5c9580296bdb6178);
+        
+    
+        var popup_569e86e7f0b48493a46dc200487eb7ba = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_ba420b2882ae6fec32b7cb28defb98de = $(`<div id="html_ba420b2882ae6fec32b7cb28defb98de" style="width: 100.0%; height: 100.0%;"><b>Prague, Czechia</b><br>Slavia Praha - FC Barcelona 1:2 (2019/2020)</div>`)[0];
+                popup_569e86e7f0b48493a46dc200487eb7ba.setContent(html_ba420b2882ae6fec32b7cb28defb98de);
+            
+        
+
+        marker_f0e9da313f9d622d60c1643e265af45d.bindPopup(popup_569e86e7f0b48493a46dc200487eb7ba)
+        ;
+
+        
+    
+    
+            var marker_63dcd77c718c790a4aee0b5e742574c1 = L.marker(
+                [55.6761, 12.5683],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_5c1c901b8932ad58495bb85ed8c07164 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: blue;\n                border: 1px solid blue;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_63dcd77c718c790a4aee0b5e742574c1.setIcon(div_icon_5c1c901b8932ad58495bb85ed8c07164);
+        
+    
+        var popup_f8569746837b2b865395123057a989e3 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_88f7a88321e46f398d834f0d90dc7709 = $(`<div id="html_88f7a88321e46f398d834f0d90dc7709" style="width: 100.0%; height: 100.0%;"><b>Copenhagen, Denmark</b><br>Spain - Croatia 5:3 (Euro 2020)</div>`)[0];
+                popup_f8569746837b2b865395123057a989e3.setContent(html_88f7a88321e46f398d834f0d90dc7709);
+            
+        
+
+        marker_63dcd77c718c790a4aee0b5e742574c1.bindPopup(popup_f8569746837b2b865395123057a989e3)
+        ;
+
+        
+    
+    
+            var marker_9a637eabc0cf349806aef98f62100680 = L.marker(
+                [48.8567, 2.3522],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_1a87c76d4024e9ef0e0b13a8ce4e9c5c = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: blue;\n                border: 1px solid blue;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_9a637eabc0cf349806aef98f62100680.setIcon(div_icon_1a87c76d4024e9ef0e0b13a8ce4e9c5c);
+        
+    
+        var popup_68eff2f42197db6fc48edc120b2010d6 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_ecd32593d0272f541daa90192b4a32a9 = $(`<div id="html_ecd32593d0272f541daa90192b4a32a9" style="width: 100.0%; height: 100.0%;"><b>Paris, France</b><br>Paris Saint-Germain - FC Barcelona 2:3 (2023/2024)</div>`)[0];
+                popup_68eff2f42197db6fc48edc120b2010d6.setContent(html_ecd32593d0272f541daa90192b4a32a9);
+            
+        
+
+        marker_9a637eabc0cf349806aef98f62100680.bindPopup(popup_68eff2f42197db6fc48edc120b2010d6)
+        ;
+
+        
+    
+    
+            var marker_60c85e7cd98263332a531a6c5aaaaf65 = L.marker(
+                [52.52, 13.405],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_4f6ce429a7323b1bb93289490bb8bcaf = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: blue;\n                border: 1px solid blue;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_60c85e7cd98263332a531a6c5aaaaf65.setIcon(div_icon_4f6ce429a7323b1bb93289490bb8bcaf);
+        
+    
+        var popup_d80abb7d82d86d7588b378bb301ac219 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_2cb502559de5a7771701836da7b0a2f4 = $(`<div id="html_2cb502559de5a7771701836da7b0a2f4" style="width: 100.0%; height: 100.0%;"><b>Berlin, Germany</b><br>Spain - Croatia 3:0 (Euro 2024) <br> Switzerland - Italy 2:0 (Euro 2024) <br> Spain - England 2:1 (Euro 2024)</div>`)[0];
+                popup_d80abb7d82d86d7588b378bb301ac219.setContent(html_2cb502559de5a7771701836da7b0a2f4);
+            
+        
+
+        marker_60c85e7cd98263332a531a6c5aaaaf65.bindPopup(popup_d80abb7d82d86d7588b378bb301ac219)
+        ;
+
+        
+    
+    
+            var marker_57734baae2978e9768df36f7316b9d9a = L.marker(
+                [51.5139, 7.4653],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_5afa4d6ab951dcaf1218aea309a9c0b7 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: blue;\n                border: 1px solid blue;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_57734baae2978e9768df36f7316b9d9a.setIcon(div_icon_5afa4d6ab951dcaf1218aea309a9c0b7);
+        
+    
+        var popup_d3607ac8c87e9e0e041546b65e7e19b8 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_e54e4493060214f771142b75119240c8 = $(`<div id="html_e54e4493060214f771142b75119240c8" style="width: 100.0%; height: 100.0%;"><b>Dortmund, Germany</b><br>Borussia Dortmund - FC Barcelona 0:0 (2019/2020) <br> Borussia Dortmund - FC Barcelona 2:3 (2024/2025)</div>`)[0];
+                popup_d3607ac8c87e9e0e041546b65e7e19b8.setContent(html_e54e4493060214f771142b75119240c8);
+            
+        
+
+        marker_57734baae2978e9768df36f7316b9d9a.bindPopup(popup_d3607ac8c87e9e0e041546b65e7e19b8)
+        ;
+
+        
+    
+    
+            var marker_078f71a837936ee8736edc1caabc3325 = L.marker(
+                [51.2333, 6.7833],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_1a76080862ac7847f8e6264733804eef = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: blue;\n                border: 1px solid blue;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_078f71a837936ee8736edc1caabc3325.setIcon(div_icon_1a76080862ac7847f8e6264733804eef);
+        
+    
+        var popup_af43898d8961b6a4fcab797cb783cc4c = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_78897e005e57d37358ae2f24272d0c89 = $(`<div id="html_78897e005e57d37358ae2f24272d0c89" style="width: 100.0%; height: 100.0%;"><b>Düsseldorf, Germany</b><br>Ukraine - Slovakia 2:1 (Euro 2024)</div>`)[0];
+                popup_af43898d8961b6a4fcab797cb783cc4c.setContent(html_78897e005e57d37358ae2f24272d0c89);
+            
+        
+
+        marker_078f71a837936ee8736edc1caabc3325.bindPopup(popup_af43898d8961b6a4fcab797cb783cc4c)
+        ;
+
+        
+    
+    
+            var marker_416c590fd1f751eff27217868a3f3ef6 = L.marker(
+                [50.1106, 8.6822],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_479ab30445a1f7b7a1e68543a4b189de = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: orange;\n                border: 1px solid orange;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_416c590fd1f751eff27217868a3f3ef6.setIcon(div_icon_479ab30445a1f7b7a1e68543a4b189de);
+        
+    
+        var popup_c4d9119e4cc60639d6bb3efad86a340e = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_83db070bc6d524e506549cd0a4f3b4b4 = $(`<div id="html_83db070bc6d524e506549cd0a4f3b4b4" style="width: 100.0%; height: 100.0%;"><b>Frankfurt, Germany</b><br>Eintracht Frankfurt - FC Barcelona 1:1 (2021/2022)</div>`)[0];
+                popup_c4d9119e4cc60639d6bb3efad86a340e.setContent(html_83db070bc6d524e506549cd0a4f3b4b4);
+            
+        
+
+        marker_416c590fd1f751eff27217868a3f3ef6.bindPopup(popup_c4d9119e4cc60639d6bb3efad86a340e)
+        ;
+
+        
+    
+    
+            var marker_1199db54997d5ddd87fcdf710026cd5d = L.marker(
+                [53.55, 10.0],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_fbc61b6220ddfb31a06c022c60a9a5d3 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: red;\n                border: 1px solid red;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_1199db54997d5ddd87fcdf710026cd5d.setIcon(div_icon_fbc61b6220ddfb31a06c022c60a9a5d3);
+        
+    
+        var popup_88257f85b865bd9f986d271b75d9223e = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_6bfc3d1fc157368a96e36a7a7c9d62fd = $(`<div id="html_6bfc3d1fc157368a96e36a7a7c9d62fd" style="width: 100.0%; height: 100.0%;"><b>Hamburg, Germany</b><br>Shakhtar Donetsk - FC Barcelona 1:0 (2023/2024)</div>`)[0];
+                popup_88257f85b865bd9f986d271b75d9223e.setContent(html_6bfc3d1fc157368a96e36a7a7c9d62fd);
+            
+        
+
+        marker_1199db54997d5ddd87fcdf710026cd5d.bindPopup(popup_88257f85b865bd9f986d271b75d9223e)
+        ;
+
+        
+    
+    
+            var marker_b028ee220f167dd3ab032ebc22272679 = L.marker(
+                [48.1375, 11.575],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_ae99776157f44dc3d6b83626971e74e7 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: red;\n                border: 1px solid red;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_b028ee220f167dd3ab032ebc22272679.setIcon(div_icon_ae99776157f44dc3d6b83626971e74e7);
+        
+    
+        var popup_dda09772d270b916672b7490491d9048 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_c570997c2a8b9d6dfa9d6660e0ed8d42 = $(`<div id="html_c570997c2a8b9d6dfa9d6660e0ed8d42" style="width: 100.0%; height: 100.0%;"><b>Munich, Germany</b><br>FC Bayern München - FC Barcelona 2:0 (2022/2023) <br> Ukraine - Romania 0:3 (Euro 2024)</div>`)[0];
+                popup_dda09772d270b916672b7490491d9048.setContent(html_c570997c2a8b9d6dfa9d6660e0ed8d42);
+            
+        
+
+        marker_b028ee220f167dd3ab032ebc22272679.bindPopup(popup_dda09772d270b916672b7490491d9048)
+        ;
+
+        
+    
+    
+            var marker_96446cfd8abf59b650483bcd011ff21f = L.marker(
+                [48.7775, 9.18],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_d1ca836e368b025c306b2f3c73b08cac = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: orange;\n                border: 1px solid orange;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_96446cfd8abf59b650483bcd011ff21f.setIcon(div_icon_d1ca836e368b025c306b2f3c73b08cac);
+        
+    
+        var popup_3b7193a0acc6303ccbc148184605f71f = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_b9d233158f8428999eb6a072290ca826 = $(`<div id="html_b9d233158f8428999eb6a072290ca826" style="width: 100.0%; height: 100.0%;"><b>Stuttgart, Germany</b><br>Ukraine - Belgium 0:0 (Euro 2024)</div>`)[0];
+                popup_3b7193a0acc6303ccbc148184605f71f.setContent(html_b9d233158f8428999eb6a072290ca826);
+            
+        
+
+        marker_96446cfd8abf59b650483bcd011ff21f.bindPopup(popup_3b7193a0acc6303ccbc148184605f71f)
+        ;
+
+        
+    
+    
+            var marker_df30a282e232b604bf64c53c336ea7c5 = L.marker(
+                [40.8333, 14.25],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_7833d21f0df7f7bbe7eb6b5a685719b4 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: orange;\n                border: 1px solid orange;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_df30a282e232b604bf64c53c336ea7c5.setIcon(div_icon_7833d21f0df7f7bbe7eb6b5a685719b4);
+        
+    
+        var popup_d6f1eb0cb978238ef375727924ce70cf = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_f4793b94ba2b307a504356f731715504 = $(`<div id="html_f4793b94ba2b307a504356f731715504" style="width: 100.0%; height: 100.0%;"><b>Naples, Italy</b><br>Napoli - FC Barcelona 1:1 (2019/2020)</div>`)[0];
+                popup_d6f1eb0cb978238ef375727924ce70cf.setContent(html_f4793b94ba2b307a504356f731715504);
+            
+        
+
+        marker_df30a282e232b604bf64c53c336ea7c5.bindPopup(popup_d6f1eb0cb978238ef375727924ce70cf)
+        ;
+
+        
+    
+    
+            var marker_83fb7b16ecb731040573d72c4188815f = L.marker(
+                [52.3728, 4.8936],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_0e0e190db41c96ec8444fbfcaf9e8258 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: red;\n                border: 1px solid red;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_83fb7b16ecb731040573d72c4188815f.setIcon(div_icon_0e0e190db41c96ec8444fbfcaf9e8258);
+        
+    
+        var popup_f3707942451ac0074f0b9dbd6372e12b = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_499c4119ebd325e7a214ef9e54eaa3f5 = $(`<div id="html_499c4119ebd325e7a214ef9e54eaa3f5" style="width: 100.0%; height: 100.0%;"><b>Amsterdam, Netherlands</b><br>Ajax Amsterdam - FC Barcelona 2:1 (2013/2014)</div>`)[0];
+                popup_f3707942451ac0074f0b9dbd6372e12b.setContent(html_499c4119ebd325e7a214ef9e54eaa3f5);
+            
+        
+
+        marker_83fb7b16ecb731040573d72c4188815f.bindPopup(popup_f3707942451ac0074f0b9dbd6372e12b)
+        ;
+
+        
+    
+    
+            var marker_b042c4563f0f39eae9d31b3607b32f8d = L.marker(
+                [55.7964, 49.1089],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_fab329d0e14eafb38efbad889b73b376 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: orange;\n                border: 1px solid orange;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_b042c4563f0f39eae9d31b3607b32f8d.setIcon(div_icon_fab329d0e14eafb38efbad889b73b376);
+        
+    
+        var popup_81a212ffd80e6147b70f7e25f1e4e258 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_40f3b5de1876f068bcf22dd46194ef2c = $(`<div id="html_40f3b5de1876f068bcf22dd46194ef2c" style="width: 100.0%; height: 100.0%;"><b>Kazan, Russia</b><br>Rubin Kazan - FC Barcelona 1:1 (2010/2011)</div>`)[0];
+                popup_81a212ffd80e6147b70f7e25f1e4e258.setContent(html_40f3b5de1876f068bcf22dd46194ef2c);
+            
+        
+
+        marker_b042c4563f0f39eae9d31b3607b32f8d.bindPopup(popup_81a212ffd80e6147b70f7e25f1e4e258)
+        ;
+
+        
+    
+    
+            var marker_d5995c806a2815c76717faebf4d6d957 = L.marker(
+                [55.7558, 37.6172],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_7992890980fd42a5c7ab8c9478459962 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: blue;\n                border: 1px solid blue;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_d5995c806a2815c76717faebf4d6d957.setIcon(div_icon_7992890980fd42a5c7ab8c9478459962);
+        
+    
+        var popup_0ac23f95ba586d2f2a917987a692e288 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_abb1dc27eac2a9bb9de7db1f6b2de03e = $(`<div id="html_abb1dc27eac2a9bb9de7db1f6b2de03e" style="width: 100.0%; height: 100.0%;"><b>Moscow, Russia</b><br>Spartak M - FC Barcelona 0:3 (2012/2013)</div>`)[0];
+                popup_0ac23f95ba586d2f2a917987a692e288.setContent(html_abb1dc27eac2a9bb9de7db1f6b2de03e);
+            
+        
+
+        marker_d5995c806a2815c76717faebf4d6d957.bindPopup(popup_0ac23f95ba586d2f2a917987a692e288)
+        ;
+
+        
+    
+    
+            var marker_afa87ad8bddc984c1fc34662d25faeb3 = L.marker(
+                [41.3828, 2.1769],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_14d70c137d593aad2c19011bc74f1b65 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: blue;\n                border: 1px solid blue;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_afa87ad8bddc984c1fc34662d25faeb3.setIcon(div_icon_14d70c137d593aad2c19011bc74f1b65);
+        
+    
+        var popup_00597f0ea8d4d45d5e62f90340792426 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_7680fb23577adf25573f9847ad8a5bd5 = $(`<div id="html_7680fb23577adf25573f9847ad8a5bd5" style="width: 100.0%; height: 100.0%;"><b>Barcelona, Spain</b><br>FC Barcelona - Levante 5:0 (2011/2012) <br> FC Barcelona - BATE Borisov 4:0 (2011/2012) <br> FC Barcelona - Valladolid 4:1 (2013/2014) <br> FC Barcelona - Real Madrid 2:1 (2013/2014) <br> FC Barcelona - AC Milan 3:1 (2013/2014) <br> FC Barcelona - UD Almeria 4:1 (2013/2014) <br> FC Barcelona - Getafe 2:2 (2013/2014) <br> FC Barcelona - APOEL Nikosia 1:0 (2014/2015) <br> FC Barcelona - Ajax Amsterdam 3:1 (2014/2015) <br> FC Barcelona - Paris Saint-Germain 3:1 (2014/2015) <br> FC Barcelona - SD Huesca 8:1 (2014/2015) <br> FC Barcelona - Cordoba CF 5:0 (2014/2015) <br> FC Barcelona - FC Bayern München 3:0 (2014/2015) <br> FC Barcelona - CD Alaves 1:2 (2016/2017) <br> FC Barcelona - Celtic FC 7:0 (2016/2017) <br> FC Barcelona - Deportivo La Coruna 4:0 (2016/2017) <br> FC Barcelona - Real Madrid 1:1 (2016/2017) <br> FC Barcelona - Hercules CF 7:0 (2016/2017) <br> FC Barcelona - Levante 3:0 (2021/2022) <br> FC Barcelona - Valencia CF 3:1 (2021/2022) <br> FC Barcelona - Dynamo Kyiv 1:0 (2021/2022) <br> FC Barcelona - Real Madrid 1:2 (2021/2022)</div>`)[0];
+                popup_00597f0ea8d4d45d5e62f90340792426.setContent(html_7680fb23577adf25573f9847ad8a5bd5);
+            
+        
+
+        marker_afa87ad8bddc984c1fc34662d25faeb3.bindPopup(popup_00597f0ea8d4d45d5e62f90340792426)
+        ;
+
+        
+    
+    
+            var marker_7ca756a8662f0b0da924f42b1cb96c35 = L.marker(
+                [40.4169, -3.7033],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_60fd2afdeb4fde43d11ae59c3fdc6973 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: red;\n                border: 1px solid red;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_7ca756a8662f0b0da924f42b1cb96c35.setIcon(div_icon_60fd2afdeb4fde43d11ae59c3fdc6973);
+        
+    
+        var popup_db04a4667585939236f097e0eed1d585 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_9b31507ef5a3a283b75b4c5529175a4b = $(`<div id="html_9b31507ef5a3a283b75b4c5529175a4b" style="width: 100.0%; height: 100.0%;"><b>Madrid, Spain</b><br>Real Madrid - FC Barcelona 2:0 (2019/2020)</div>`)[0];
+                popup_db04a4667585939236f097e0eed1d585.setContent(html_9b31507ef5a3a283b75b4c5529175a4b);
+            
+        
+
+        marker_7ca756a8662f0b0da924f42b1cb96c35.bindPopup(popup_db04a4667585939236f097e0eed1d585)
+        ;
+
+        
+    
+    
+            var marker_3b94379f8e8b22874c5b7678edb95ffe = L.marker(
+                [39.47, -0.3764],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_2dac07d1b1db7be057facc9f2ab67487 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: blue;\n                border: 1px solid blue;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_3b94379f8e8b22874c5b7678edb95ffe.setIcon(div_icon_2dac07d1b1db7be057facc9f2ab67487);
+        
+    
+        var popup_74ec125d927b5f0e442a6a947ff87b62 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_ecc925ac0aba63878189d0d67fa8f635 = $(`<div id="html_ecc925ac0aba63878189d0d67fa8f635" style="width: 100.0%; height: 100.0%;"><b>Valencia, Spain</b><br>Valencia CF - FC Barcelona 2:3 (2016/2017)</div>`)[0];
+                popup_74ec125d927b5f0e442a6a947ff87b62.setContent(html_ecc925ac0aba63878189d0d67fa8f635);
+            
+        
+
+        marker_3b94379f8e8b22874c5b7678edb95ffe.bindPopup(popup_74ec125d927b5f0e442a6a947ff87b62)
+        ;
+
+        
+    
+    
+            var marker_dde2a4bb1d96c3ff1201d616bb5be5ac = L.marker(
+                [48.0028, 37.8053],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_8f980ecacbd197c0258ad528e68598b8 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: blue;\n                border: 1px solid blue;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_dde2a4bb1d96c3ff1201d616bb5be5ac.setIcon(div_icon_8f980ecacbd197c0258ad528e68598b8);
+        
+    
+        var popup_9e7266c0ab28b0af49418bc000f6f0e6 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_a0ae2621a54b7fd23a38133d49331c0a = $(`<div id="html_a0ae2621a54b7fd23a38133d49331c0a" style="width: 100.0%; height: 100.0%;"><b>Donetsk, Ukraine</b><br>Shakhtar Donetsk - FC Barcelona 0:1 (2010/2011) <br> Spain - France 2:0 (Euro 2012)</div>`)[0];
+                popup_9e7266c0ab28b0af49418bc000f6f0e6.setContent(html_a0ae2621a54b7fd23a38133d49331c0a);
+            
+        
+
+        marker_dde2a4bb1d96c3ff1201d616bb5be5ac.bindPopup(popup_9e7266c0ab28b0af49418bc000f6f0e6)
+        ;
+
+        
+    
+    
+            var marker_72ffdd3d7318bc93bb9ace2f750e299a = L.marker(
+                [49.9925, 36.2311],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_e5712ff4750e29f9414fca8f30d09711 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: blue;\n                border: 1px solid blue;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_72ffdd3d7318bc93bb9ace2f750e299a.setIcon(div_icon_e5712ff4750e29f9414fca8f30d09711);
+        
+    
+        var popup_34dceb3cb67f8e4798a9604825258f3e = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_0c7e761b3b41f7309be2b6a3e9941c96 = $(`<div id="html_0c7e761b3b41f7309be2b6a3e9941c96" style="width: 100.0%; height: 100.0%;"><b>Kharkiv, Ukraine</b><br>Netherlands - Germany 2:1 (Euro 2012)</div>`)[0];
+                popup_34dceb3cb67f8e4798a9604825258f3e.setContent(html_0c7e761b3b41f7309be2b6a3e9941c96);
+            
+        
+
+        marker_72ffdd3d7318bc93bb9ace2f750e299a.bindPopup(popup_34dceb3cb67f8e4798a9604825258f3e)
+        ;
+
+        
+    
+    
+            var marker_30154abab1d5a65e902b3656af7a8127 = L.marker(
+                [50.45, 30.5233],
+                {
+}
+            ).addTo(map_bf91efbd72548edf2517afa62137ae64);
+        
+    
+            var div_icon_2da0c252a0830f8272d9d70fab7586ae = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                width: 25px;\n                height: 25px;\n                border-radius: 90%;\n                background-color: blue;\n                border: 1px solid blue;\n                font-size: 22px;\n            \"\u003e\n                \u26bd\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_30154abab1d5a65e902b3656af7a8127.setIcon(div_icon_2da0c252a0830f8272d9d70fab7586ae);
+        
+    
+        var popup_2ec6a05eb28b4fe53c915f86f3b7b2f2 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_e40bf9e7912294d0adbd1ff84e03d782 = $(`<div id="html_e40bf9e7912294d0adbd1ff84e03d782" style="width: 100.0%; height: 100.0%;"><b>Kyiv, Ukraine</b><br>Dynamo Kyiv - FC Barcelona 1:2 (2009/2010) <br> Sweden - England 2:3 (Euro 2012) <br> Italy - England 0:0 (Euro 2012) <br> Spain - Italy 4:0 (Euro 2012)</div>`)[0];
+                popup_2ec6a05eb28b4fe53c915f86f3b7b2f2.setContent(html_e40bf9e7912294d0adbd1ff84e03d782);
+            
+        
+
+        marker_30154abab1d5a65e902b3656af7a8127.bindPopup(popup_2ec6a05eb28b4fe53c915f86f3b7b2f2)
+        ;
+
+        
+    
+</script>
+</html>
